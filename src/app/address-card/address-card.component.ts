@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddressCardComponent implements OnInit {
 
-  constructor() { }
+  user : any;
+  constructor() {
+    this.user={
+    name: 'Foo Bar',
+    title: 'Software Developer',
+    address: '21,Paikpara, Kolkata',
+    phone:[
+    "022345671234",
+    "0223",
+    "033254312345"
+  ]
+   }
+  }
 
   ngOnInit() {
   }
